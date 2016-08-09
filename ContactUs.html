@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+
+	#navbar{
+		background-color: #fff;
+		position: relative;
+
+	}
+	
+	#ContactUs{
+		margin-bottom: 5vh;
+	}
+
+	#Address{
+		text-align: center;
+		margin:auto;
+	}
+	#HoursOfOp{
+	}
+	#ContactInfo{
+		margin-top: -17vh;
+	}
+	#googleMap{
+		margin:auto;
+	}
+	*{
+		font-family: 'Roboto', sans-serif;
+      font-weight: 100 !important;
+      text-align: center;
+      position: relative;
+
+	}
+	</style>
+
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="Information about Milan Kim Peditrics">
+		<meta name="keywords" content="Milan, Kim, Pediatrics, Doctor, Health, Rowland, Heights, California, Southern, Medicine">
+		<meta name="author" content="Thomas Kim">
+
+
+	    <title>About Us</title>
+
+	    <!-- Bootstrap -->
+	    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+	    <link rel="stylesheet" href="css/bootstrap.css">
+
+		<!-- Import jQuery -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	    <!--Import roboto font-->
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700" rel="stylesheet">
+
+	     <!--Import Google Icon Font-->
+    	<link href="https://fonts.goter:nogleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    	<!-- Import Google Maps -->
+    	<script src="http://maps.googleapis.com/maps/api/js"></script>
+    	<script>
+    	var myCenter=new google.maps.LatLng(33.988929, -117.892307);
+    	function initialize(){
+    		var mapProp = {
+			  center:myCenter,
+			  // center:new google.maps.LatLng(33.988929, -117.892307);
+			  zoom: 10,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			  var marker=new google.maps.Marker({
+			  	position:myCenter,
+			  });
+
+			  marker.setMap(map);
+    	}
+    	google.maps.event.addDomListener(window, 'load', initialize);
+
+    	</script>
+
+	</head>
+
+	<div class="row">
+	</div>
+
+	<body>
+		<!--navigation menu across the top of the web page --> 
+		<nav class="navbar navbar-fixed-top" id="navbar">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Milan Kim Pediatrics</a>
+		    </div>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li class="active"><a href="index.html">Home</a></li>
+		      <li><a href="AboutUs.html">Who We Are</a></li>
+		      <li><a href="MedicalForms.html">Medical Forms </a> </li>
+		      <li><a href="FAQ.html">FAQ</a></li> 
+		      <li><a href="ContactUs.html">Contact Us</a></li> 
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class ="row">
+
+			<h1 id="ContactUs"> Contact Us </h1>
+
+			<div class="row">
+
+				<!-- Hours of Operation and Address -->
+				<div class="col-lg-6" id="HoursOfOp">
+					<h2> Hours of Operation </h2>
+					<h3> Monday: 9:00am - 5:00pm* </h3>
+					<h3> Tuesday: 9:00am - 5:00pm* </h3>
+					<h3> Wednesday: 9:00am - 12:0pm* </h3>
+					<h3> Thursday: 9:00am - 5:00pm* </h3>
+					<h3> Friday: 9:00am - 5:00pm* </h3>
+					<h5> *Hours subject to change at short notice </h5>
+				</div>
+
+				<!-- Google Maps location -->
+				<div class="col-lg-6" id="Address">
+					<h2> Address </h2>
+					<h3> 18895 Colima Rd #A <br> Rowland Heights, CA 91748</h3>
+					<div id="googleMap" style="width:500px;height:40vh;"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6" id="ContactInfo">
+					<h2> Contact Information </h2>
+					<h3> Phone number: 626-581-2332 </h3>
+					<h3> Fax: 626-581-2343 </h3>
+					<h3> Email: milankimpediatrics@gmail.com </h3>
+				</div>
+			</div>
+
+		
+		</div>
+		
+
+
+	</body>
+
+
+</html>
+
+
+

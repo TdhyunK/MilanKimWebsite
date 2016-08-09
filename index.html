@@ -3,23 +3,57 @@
 	<style>
 	#homePageJumbotron{
 		background-color: #cccccc;
-		/*background: url("Hospital.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		  background-position: 0 50px;*/
 		text-align: center;
-		height:100vh;
+		margin: 0px;
+		/*height: 100vh;*/
 	}
 
 	#navbar{
 		background-color: #fff
 	}
 
+	#InfoCenter{
+		text-align: center;
+	}
+/*
+	#homeButton{
+		margin-top: 50px;
+		position: relative;
+		text-align: center;
+	}
+
+	#WhoWeAreButton{
+		margin-top: 25vh;
+		position: relative;
+		text-align: center;
+
+	}
+
+	#MedicalFormsButton{
+		margin-top: 25vh;
+		position: relative;
+		text-align: center;
+	}
+
+	#FAQButton{
+
+		margin-top: 25vh;
+		position: relative;
+		text-align: center;
+
+	}
+
+	#ContactUsButton{
+		margin-top: 25vh;
+		position: relative;
+		text-align: center;
+
+	}*/
+
 	*{
 		font-family: 'Roboto', sans-serif;
-      font-weight: 100;
+      font-weight: 500;
+      color: black;
 	}
 	</style>
 
@@ -47,6 +81,16 @@
 
 	     <!--Import Google Icon Font-->
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    	<script>
+			$(document).ready(function(){
+			      $("#AboutMeIcon").click(function(){
+			        $("#moreInfo").hide();
+			        $("#personalInfo").show();
+			        $("#AboutMePage").fadeIn(2000);
+			      });
+			    });    		
+    		
+    	</script>
 
 	</head>
 
@@ -54,20 +98,20 @@
 	</div>
 
 	<body>
-		<nav class="navbar navbar-fixed-top" id="navbar">
+		<!-- <nav class="navbar navbar-fixed-top" id="navbar">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">Milan Kim Pediatrics</a>
+		      <a class="navbar-brand" href="index.html">Milan Kim Pediatrics</a>
 		    </div>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="#">Who We Are</a></li>
+		      <li><a href="AboutUs.html">Who We Are</a></li>
 		      <li><a href="#">Medical Forms </a> </li>
 		      <li><a href="#">FAQ</a></li> 
 		      <li><a href="#">Contact Us</a></li> 
 		    </ul>
 		  </div>
-		</nav>
+		</nav> -->
 
 		<div class="jumbotron" id="homePageJumbotron">
 			<h1> Welcome to <br> Milan Kim, M.D. <br> Pediatrics </h1>
@@ -76,6 +120,40 @@
 			<h3> Helping the community one patient at a time</h3>
 		</div>
 
+		<div class="row">
+			<h2 id="InfoCenter"> Information Center </h2>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 text-center" id="WhoWeAreButton">
+				<a href="AboutUs.html">
+					<div class="circle"> 
+						<p> Who we are </p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 text-center" id="MedicalFormsButton">
+				<a href="MedicalForms.html">
+					<div class="circle">
+						<p> Medical Forms </p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 text-center" id="FAQButton">
+				<a href="FAQ.html">
+					<div class="circle">
+						<p> FAQ </p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 text-center" id="ContactUsButton">
+				<a href="ContactUs.html">
+					<div class="circle">
+						<p> Contact Us </p>
+					</div>	
+				</a>
+			</div>
+		</div>
 	</body>
 
 

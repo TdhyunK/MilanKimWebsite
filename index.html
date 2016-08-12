@@ -10,29 +10,37 @@
 		height: 50vh;
 	}
 
+	#InfoPage{
+		background: url("weather.png");
+		height:50vh;
+
+	}
 	#navbar{
 		background-color: #fff
 	}
 
 	#InfoCenter{
 		text-align: center;
+		margin-bottom: 5%;
 	}
 
 	#emergency{
 		font-size: 2em;
 		margin-top: 1.5em;
 	}
-/*
+
 	#homeButton{
 		margin-top: 50px;
 		position: relative;
 		text-align: center;
 	}
 
-	#WhoWeAreButton{
+/*	#WhoWeAreButton{
 		margin-top: 25vh;
 		position: relative;
+		display: block;
 		text-align: center;
+		border: solid green 3px;
 
 	}
 
@@ -91,13 +99,12 @@
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     	<script>
 			$(document).ready(function(){
-			      $("#AboutMeIcon").click(function(){
-			        $("#moreInfo").hide();
-			        $("#personalInfo").show();
-			        $("#AboutMePage").fadeIn(2000);
+			      $("#WhoWeAreButton").hover(function(){
+			      	$(this).effect("shake");
 			      });
 			    });    		
     		
+
     	</script>
 
 	</head>
@@ -113,7 +120,7 @@
 			</div>
 			<h3> Helping the community one patient at a time</h3>
 		</div>
-
+		<div id = "InfoPage">
 		<div class="row">
 			<h2 id="InfoCenter"> Information Center </h2>
 		</div>
@@ -147,6 +154,7 @@
 					</div>	
 				</a>
 			</div>
+		</div>
 		</div>
 
 	</body>

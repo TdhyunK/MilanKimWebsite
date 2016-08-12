@@ -15,20 +15,29 @@
 		margin-right: 30%;
 	}
 
-	#question{
+	#Q1{
 		font-size: 2em;
 		font-weight: bold;
+		margin-top: 5%;
+		margin-left: 30%;
+		margin-right: 30%;
+		cursor: pointer;
 	}
 
-	#answer{
+	#A1{
+		
 		font-size: 2em;
+		margin-left: 30%;
+		margin-right: 30%;
+		display: none;
 	}
 
 	*{
 		font-family: 'Roboto', sans-serif;
-      font-weight: 100 !importantbo;
+      font-weight: 300;
       text-align: center;
       position: relative;
+      background: url("weather.png");
 
 	}
 	</style>
@@ -58,6 +67,14 @@
 	     <!--Import Google Icon Font-->
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    	<script>
+		   $(document).ready(function() {
+		      $("#Q1").click(function(){
+		      	$("#A1").slideToggle();
+		      }); 
+		    });
+    	</script>
+
 	</head>
 
 	<div class="row">
@@ -82,12 +99,15 @@
 
 		<div class="row">
 			<h1> FAQ </h1>
-			<h3> Here are some frequently asked questions </h3>
+			<h3> Click on the questions to see the answers. </h3>
 
-			<ul style="list-style-type:none" id="FAQList">
+			<!-- <ul style="list-style-type:none" id="FAQList">
 				<li id="question"> Q: What Insurance do you accept?</li>
 				<li id="answer"> A: We accept (insert insurance names)</li>
-			</ul>
+			</ul> -->
+			<h3 id="Q1"> Q: What insurance do you accept? </h3>
+			<h3 id="A1"> A: We accept the following insurances: INSERT INSURANCE NAMES </h3>
+
 		</div>
 	</body>
 

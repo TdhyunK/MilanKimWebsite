@@ -4,14 +4,22 @@
 
 	#WhoAreWe{
 		position: relative;
+		background: url("weather.png");
+		/*background-color: #4ABDAC;*/
+		/*background-clip: padding-box;*/
+		background-attachment: fixed;
+		/*margin: 10px 500px;*/
+		/*margin: 0px 500px 0px 500px;*/
+		/*padding: 315px;*/
 	}
 
 	#MilanKim{
-		margin-top: 100px
+		margin-top: 7%;
 	}
 
 	#MilanKimText{
 		margin: 10px 500px;
+		font-size: 2em;
 	}
 
 	#bioIntro{
@@ -21,6 +29,7 @@
 	#navbar{
 		background-color: #fff;
 		position: relative;
+		margin: 0px;
 
 	}
 
@@ -29,10 +38,8 @@
       font-weight: 300;
       text-align: center;
       position: relative;
-      background: url("weather.png");
-    
-
 	}
+
 	</style>
 
 	<head>
@@ -60,17 +67,35 @@
 	     <!--Import Google Icon Font-->
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+		<!--load amimate.css from CDN-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"> 
+		 
+		<!--load WOW js from CDN-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1	.2/wow.min.js"></script>
+
+		<!--Initiate WOW js, can be at the bottom of your file -->
+		<script>
+		  wow = new WOW(
+		    {
+		        boxClass:     'wow',      // default
+		        animateClass: 'animated', // change this if you are not using animate.css
+		        offset:       0,          // default
+		        mobile:       true,       // keep it on mobile
+		        live:         true        // track if element updates
+		      }
+		    )
+		   wow.init();
+		</script>
+
 	</head>
 
-	<div class="row">
-	</div>
 
 	<body>
 		<!--navigation menu across the top of the web page --> 
 		<nav class="navbar navbar-fixed-top" id="navbar">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">Milan Kim Pediatrics</a>
+		      <a class="navbar-brand" href="index.html">Milan Kim Pediatrics</a>
 		    </div>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li class="active"><a href="index.html">Home</a></li>
@@ -82,27 +107,38 @@
 		  </div>
 		</nav>
 
+		<!-- <div class = "layer"> -->
 		<div class ="row" id="WhoAreWe">
+			<div class="wow slideInRight">
 
 			<h1> Who Are We? </h1>
 			<h3 id="bioIntro"> We are a group of individuals looking to help anyone and everyone who has a medical need. Get to know us more down below.</h3>
+			</div> 
 
+			<div class="wow slideInLeft">
 			<h2 id="MilanKim"> Milan Kim, M.D. </h2>
+			</div>
 
+			<div class="wow slideInRight">
 			<img src="blankProfile.jpg" width = 200px height = 200px>
 			<p id="MilanKimText"> milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim </p>
+			</div>
 
+			<div class="wow slideInLeft">
 			<h2 id="MilanKim"> Grace Kim </h2>
 			<img src="blankProfile.jpg" width = 200px height = 200px>
 			<p id="MilanKimText"> milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim </p>
+			</div>
 
+			<div class="wow slideInRight">
 			<h2 id="MilanKim"> YungMee Kim </h2>
 			<img src="blankProfile.jpg" width = 200px height = 200px>
 			<p id="MilanKimText"> milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim milan kim </p>
+			</div>
 
-		</div>
 		
-
+		</div>
+		<!-- </div> -->
 	</body>
 
 

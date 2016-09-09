@@ -3,13 +3,25 @@
 	<style>
 
 	#navbar{
-		background-color: #fff;
+		background-color: initial;
 		position: relative;
-
+		margin: 0px;
 	}
 	
 	#ContactUs{
 		margin-bottom: 5vh;
+	}
+
+	#ContactUsFrame{
+				position: relative;
+		background: url("weather.png");
+		/*background-color: #4ABDAC;*/
+		/*background-clip: padding-box;*/
+		background-attachment: fixed;
+		/*margin: 10px 500px;*/
+		/*margin: 0px 500px 0px 500px;*/
+		/*padding: 315px;*/
+		height: 95vh;
 	}
 
 	#Address{
@@ -23,14 +35,13 @@
 	}
 	#googleMap{
 		margin:auto;
+		background-color: grey;
 	}
 	*{
 		font-family: 'Roboto', sans-serif;
       font-weight: 300 !important;
       text-align: center;
       position: relative;
-      background: url("weather.png");      
-
 	}
 	</style>
 
@@ -58,6 +69,27 @@
 
 	     <!--Import Google Icon Font-->
     	<link href="https://fonts.goter:nogleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    	<!--load amimate.css from CDN-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"> 
+		 
+		<!--load WOW js from CDN-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1	.2/wow.min.js"></script>
+
+		<!--Initiate WOW js, can be at the bottom of your file -->
+		<script>
+		  wow = new WOW(
+		    {
+		        boxClass:     'wow',      // default
+		        animateClass: 'animated', // change this if you are not using animate.css
+		        offset:       0,          // default
+		        mobile:       true,       // keep it on mobile
+		        live:         true        // track if element updates
+		      }
+		    )
+		   wow.init();
+		</script>
+
 
     	<!-- Import Google Maps -->
     	<script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -103,7 +135,8 @@
 		  </div>
 		</nav>
 
-		<div class ="row">
+		<div id="ContactUsFrame">
+		<div class ="row wow slideInRight">
 
 			<h1 id="ContactUs"> Contact Us </h1>
 
@@ -121,7 +154,7 @@
 				</div>
 
 				<!-- Google Maps location -->
-				<div class="col-lg-6" id="Address">
+				<div class="col-lg-6" id="Address" height=100% width=100%>
 					<h2> Address </h2>
 					<h3> 18895 Colima Rd #A <br> Rowland Heights, CA 91748</h3>
 					<div id="googleMap" style="width:500px;height:40vh;"></div>
@@ -138,6 +171,7 @@
 			</div>
 
 		
+		</div>
 		</div>
 		
 

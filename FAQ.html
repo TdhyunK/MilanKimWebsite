@@ -6,19 +6,26 @@
 	#navbar{
 		background-color: #fff;
 		position: relative;
+		margin: 0px;
 
 	}
 
 	#FAQList{
-		margin-top: 5%;
-		margin-left: 30%;
-		margin-right: 30%;
+		position: relative;
+		background: url("weather.png");
+		/*background-color: #4ABDAC;*/
+		/*background-clip: padding-box;*/
+		background-attachment: fixed;
+		/*margin: 10px 500px;*/
+		/*margin: 0px 500px 0px 500px;*/
+		/*padding: 315px;*/
 	}
+
 
 	#Q1{
 		font-size: 2em;
 		font-weight: bold;
-		margin-top: 5%;
+		margin-top: 7%;
 		margin-left: 30%;
 		margin-right: 30%;
 		cursor: pointer;
@@ -37,7 +44,6 @@
       font-weight: 300;
       text-align: center;
       position: relative;
-      background: url("weather.png");
 
 	}
 	</style>
@@ -66,6 +72,27 @@
 
 	     <!--Import Google Icon Font-->
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    			<!--load amimate.css from CDN-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"> 
+		 
+		<!--load WOW js from CDN-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1	.2/wow.min.js"></script>
+
+		<!--Initiate WOW js, can be at the bottom of your file -->
+		<script>
+		  wow = new WOW(
+		    {
+		        boxClass:     'wow',      // default
+		        animateClass: 'animated', // change this if you are not using animate.css
+		        offset:       0,          // default
+		        mobile:       true,       // keep it on mobile
+		        live:         true        // track if element updates
+		      }
+		    )
+		   wow.init();
+		</script>
+
 
     	<script>
 		   $(document).ready(function() {
@@ -97,16 +124,14 @@
 		  </div>
 		</nav>
 
-		<div class="row">
-			<h1> FAQ </h1>
-			<h3> Click on the questions to see the answers. </h3>
+		<div class="row" id="FAQList">
+			<div class="wow slideInRight">
+				<h1 id> FAQ </h1>
+				<h3> Click on the questions to see the answers. </h3>
 
-			<!-- <ul style="list-style-type:none" id="FAQList">
-				<li id="question"> Q: What Insurance do you accept?</li>
-				<li id="answer"> A: We accept (insert insurance names)</li>
-			</ul> -->
-			<h3 id="Q1"> Q: What insurance do you accept? </h3>
-			<h3 id="A1"> A: We accept the following insurances: INSERT INSURANCE NAMES </h3>
+				<h3 id="Q1"> Q: What insurance do you accept? </h3>
+				<h3 id="A1"> A: We accept the following insurances: INSERT INSURANCE NAMES </h3>
+			</div>
 
 		</div>
 	</body>

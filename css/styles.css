@@ -13,12 +13,20 @@
 	margin: 0px !important;
 }
 
+#contact{
+	height: 100vh;
+	width: 100vh;
+	padding: 0px !important;
+	margin: 0px !important;
+
+}
+
 #Who-Are-We{
 	margin-top: 5%;
 
 }
 
-#image-container{
+#left-container{
 	position: absolute;
 	width: 100vh;
 	height: 100vh;
@@ -29,14 +37,14 @@
 	background-size: 100% 100%;
 }
 
-#person-chooser{
+#right-container{
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	height: 100vh;
 	left: 90vh;
 	width: 100vh;
-	background-color: #c1c1c1;
+	/*background-color: #white;*/
 }
 
 #GraceText, #GraceImg{
@@ -48,17 +56,32 @@
 	display: none;
 }
 
+#map {
+    position: absolute;
+	width: 100vh;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	left: 0;
+}
+
+#copyright{
+	color: white;
+}
+
 .btn-primary{
 	background-color: #18BC9C;
 	border-color: #fff;
 	font-size: 1.5em;
 }
 .row{
-	padding: 5%;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-bottom: 0%;
 }
 
 
-.about-container{
+.about-container, .contact-container{
 	position: relative;
 	width: 100vh;
 	height: 100vh;

@@ -82,14 +82,14 @@
 
     <section id="About-Us">
     	<div class="about-container">
-    		<div id="image-container">
+    		<div id="left-container">
     			<img class="image" id="MilanImg" src="Medical-People-Doctors-with-Stethoscopes-HD-Photo-1.jpg">
     			<img class="image" id="GraceImg" src="nurse.jpeg">
     			<img class="image" id="YungmiImg" src="florida-nurses.jpg">
 
     		</div>
 
-    		<div id="person-chooser">
+    		<div id="right-container">
     			<div class="row">
     				<div class="col-lg-4">
     					<button type="button" class="btn btn-primary" id="MilanButton"> Milan Kim </button>
@@ -111,6 +111,57 @@
     	</div>
     </section >
 
+    <section id="contact">
+    	<div class="contact-container">
+    		<div id="right-container">
+
+	    		<div id="map"> </div>
+
+		    	
+		    	<script>
+		    	// var myCenter=new google.maps.LatLng(33.988929, -117.892307);
+				function initMap() {
+		    	var myLocation = {lat: 33.988929, lng: -117.892307};
+				    var map = new google.maps.Map(document.getElementById('map'), {
+				      zoom: 10,
+				      center: myLocation
+				    });
+				    var marker = new google.maps.Marker({
+				      position: myLocation,
+				      map: map
+				    });
+				  }
+		    	</script>
+		    	<!-- Import Google Maps -->
+		    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbIaxI8-UP9180FooSHrXUfwoHrRb6AcI&callback=initMap" type="text/javascript"></script>
+	    	</div>
+	    	<div id="left-container">
+	    		<div class="row">
+					<h3> Important Forms </h3>
+					<p> New Patient Form: <a href="https://drive.google.com/file/d/0B9V-h0QFugfBZzFiQ3M2ODhwcHc4bXkwaDhEZm5QOGZMYUpj/view"> Click here to download </a> </p>
+				</div>
+
+	    		<div class="row">
+		    		<h3> Hours of Operation </h3>
+		    		<p> Monday: 9:00am - 5:00pm* </p>
+					<p> Tuesday: 9:00am - 5:00pm* </p>
+					<p> Wednesday: 9:00am - 12:0pm* </p>
+					<p> Thursday: 9:00am - 5:00pm* </p>
+					<p> Friday: 9:00am - 5:00pm* </p>
+					<p> *Hours subject to change at short notice </p>
+				</div>
+				<div class="row">
+					<h3> Contact Information </h3>
+					<p> Address: 18895 Colima Rd #A <br> Rowland Heights, CA 91748</>
+					<p> Phone number: 626-581-2332 </p>
+					<p> Fax: 626-581-2343 </p>
+					<p> Email: milankimpediatrics@gmail.com </p>
+				</div>
+				
+	    	</div>
+    	</div>
+    </section>
+
     <!-- Footer -->
     <footer class="text-center">
         
@@ -118,7 +169,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Thomas Kim 2016
+                        Copyright &copy; <a href="http://thomasdkim.me" id="copyright">Thomas Kim 2016</a>
                     </div>
                 </div>
             </div>

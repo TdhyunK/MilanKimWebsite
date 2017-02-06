@@ -1,0 +1,72 @@
+#Home{
+	height: 100vh;
+}
+
+#HomeText{
+	margin-top: 5%;
+}
+
+#About-Us{
+	height: 100vh;
+	width: 100vh;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+#Who-Are-We{
+	margin-top: 5%;
+
+}
+
+#image-container{
+	position: absolute;
+	width: 100vh;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	background-image: url("Medical-People-Doctors-with-Stethoscopes-HD-Photo-1.jpg");
+	background-size: 100% 100%;
+}
+
+#person-chooser{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	height: 100vh;
+	left: 90vh;
+	width: 100vh;
+	background-color: #c1c1c1;
+}
+
+#GraceText, #GraceImg{
+	display: none;
+	display: none;
+}
+
+#YungmiText, #YungmiImg{
+	display: none;
+}
+
+.btn-primary{
+	background-color: #18BC9C;
+	border-color: #fff;
+	font-size: 1.5em;
+}
+.row{
+	padding: 5%;
+}
+
+
+.about-container{
+	position: relative;
+	width: 100vh;
+	height: 100vh;
+	margin: 0;
+	padding:0;
+}
+
+.image{
+	height: 100vh;
+	width: 100vh;
+}
